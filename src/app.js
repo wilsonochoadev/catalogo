@@ -1,6 +1,6 @@
 const catalogo = async () => {
     try {
-        const res = await fetch('./catalogo.json');
+        const res = await fetch('../catalogo.json');
         const data = await res.json();
         let catalogoSection = ''
 
