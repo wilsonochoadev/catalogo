@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Ropa</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-background">
+    <section class="w-full">
+        <section id="catalogo" class="flex items-center gap-10 justify-center p-10 flex-wrap max-w-7xl mx-auto">
+
+
+
+        </section>
+    </section>
+    <section style="display: none;" id="modal"
+        class=" bg-[#00000046] w-full h-full fixed top-0 overflow-hidden items-center justify-center">
+        <div class="bg-background rounded-xl flex overflow-hidden flex-col sm:flex-row mx-7 sm:h-[400px]">
+            <section class="sm:h-[400px] flex">
+                <div class="w-[133px] cursor-pointer ">
+                    <img class="mini-imagen-modal"
+                        src="https://i.pinimg.com/736x/15/1b/2b/151b2b3538c2c3b5c48c03c1879f3bc6.jpg" alt="" />
+                    <img class="mini-imagen-modal"
+                        src="https://i.pinimg.com/736x/e4/e0/56/e4e056806669318dde14f62e96969b59.jpg" alt="" />
+                    <img class="mini-imagen-modal"
+                        src="https://i.pinimg.com/736x/43/db/65/43db6576a42c17c17ad8f5139eaf2559.jpg" alt="" />
+                </div>
+                <div class="w-[400px] overflow-hidden">
+                    <img id="modal-imagen" src="https://i.pinimg.com/736x/15/1b/2b/151b2b3538c2c3b5c48c03c1879f3bc6.jpg"
+                        alt="imagen" />
+                </div>
+            </section>
+            <section class="p-5 sm:w-[300px] flex flex-col sm:p-8">
+                <p class=" w-full relative h-[50px] sm:h-[40px] cursor-pointer" onclick="closeModal()">
+                    <span class="text-2xl absolute right-0 bg-menus rounded-full p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </span>
+                </p>
+                <div class="basis-5/6">
+                    <h2 id="modal-nombre" class="text-2xl font-bold"></h2>
+                    <span id="modal-precio" class="font-semibold "></span>
+                </div>
+                <div>
+                    <button id="whatsapp-button"
+                        class="flex gap-2 items-center rounded-3xl py-2 px-4 border bg-[#51B255] text-[#fff] duration-500 hover:bg-menus hover:text-[#51B255]">
+                        Comprar
+                        <img class="w-5" src="../public/whatsapp.png" alt="">
+                    </button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
