@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg",
+        "nombre": "Pantalon",
+        "precio": "120000"
+    },
+    {
+        "id": "2",
+        "imagen": "https://i.pinimg.com/736x/43/db/65/43db6576a42c17c17ad8f5139eaf2559.jpg",
+        "nombre": "Falda",
+        "precio": "130000"
+    },
+    {
+        "id": "3",
+        "imagen": "https://i.pinimg.com/736x/37/a1/b4/37a1b49ff8b212030d7dd287ce8f00ff.jpg",
+        "nombre": "Falda",
+        "precio": "140000"
+    },
+    {
+        "id": "4",
+        "imagen": "https://i.pinimg.com/736x/15/1b/2b/151b2b3538c2c3b5c48c03c1879f3bc6.jpg",
+        "nombre": "Pantalon",
+        "precio": "170000"
+    },
+    {
+        "id": "5",
+        "imagen": "https://i.pinimg.com/736x/cb/43/1e/cb431e583b2a03df55c5ac00e2dd30e4.jpg",
+        "nombre": "Falda",
+        "precio": "110000"
+    },
+    {
+        "id": "6",
+        "imagen": "https://i.pinimg.com/736x/e4/e0/56/e4e056806669318dde14f62e96969b59.jpg",
+        "nombre": "Short",
+        "precio": "90000"
+    },
+    {
+        "id": "7",
+        "imagen": "https://i.pinimg.com/736x/2d/00/7f/2d007f0bfcbee4f18b153ac896cbf8c5.jpg",
+        "nombre": "Sueter",
+        "precio": "170000"
+    },
+    {
+        "id": "8",
+        "imagen": "https://i.pinimg.com/736x/bf/8f/e5/bf8fe5de1ff93077090ec8d9fdec288a.jpg",
+        "nombre": "Sueter",
+        "precio": "200000"
+    }
+]
