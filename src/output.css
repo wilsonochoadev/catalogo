@@ -653,6 +653,22 @@ video {
   width: 180px;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
 .min-w-\[260px\] {
   min-width: 260px;
 }
@@ -874,5 +890,9 @@ video {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 }

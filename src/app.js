@@ -7,7 +7,7 @@ const catalogo = async () => {
         data.map(ropa => {
             catalogoSection += `
                 <div 
-                    class="w-[180px] md:w-[260px] cursor-pointer hover:scale-105 duration-300" 
+                    class="w-[150px] md:w-[260px] cursor-pointer hover:scale-105 duration-300" 
                     onclick="mostrarModal('${ropa.nombre}','${ropa.precio}','${ropa.imagen}')">
                     <div class="overflow-hidden md:h-[256px] bg-main">
                         <img src=${ropa.imagen} alt=${ropa.nombre}/>
