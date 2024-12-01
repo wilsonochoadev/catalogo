@@ -1,15 +1,43 @@
 [
     {
-        "id": "1",
+        "id": "0",
         "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg",
         "nombre": "Pantalon",
-        "precio": "120000"
+        "precio": "120000",
+        "colores": [
+            {
+                "nombre": "rojo",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            },
+            {
+                "nombre": "purple",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            },
+            {
+                "nombre": "morado",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            },
+            {
+                "nombre": "morado",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            }
+        ]
     },
     {
-        "id": "2",
+        "id": "1",
         "imagen": "https://i.pinimg.com/736x/43/db/65/43db6576a42c17c17ad8f5139eaf2559.jpg",
         "nombre": "Falda",
-        "precio": "130000"
+        "precio": "130000",
+        "colores": [
+            {
+                "nombre": "morado",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            },
+            {
+                "nombre": "morado",
+                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+            }
+        ]
     },
     {
         "id": "3",

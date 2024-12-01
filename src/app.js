@@ -2,34 +2,63 @@ const catalogo = async () => {
     try {
         const res = await fetch('catalogo.json');
         const data = await res.json();
-        let catalogoSection = ''
+        let catalogoSection = '';
 
         data.map(ropa => {
+            const colores = ropa.colores ? JSON.stringify(ropa.colores) : '[]';
             catalogoSection += `
                 <div 
-                    class="w-[150px] md:w-[260px] cursor-pointer hover:scale-105 duration-300" 
-                    onclick="mostrarModal('${ropa.nombre}','${ropa.precio}','${ropa.imagen}')">
+                    class="w-[150px] md:w-[260px] cursor-pointer hover:scale-105 duration-300 card"
+                    data-nombre="${ropa.nombre}"
+                    data-precio="${ropa.precio}"
+                    data-imagen="${ropa.imagen}"
+                    data-colores='${colores}'
+                >
                     <div class="overflow-hidden md:h-[256px] bg-main">
-                        <img src=${ropa.imagen} alt=${ropa.nombre}/>
+                        <img src="${ropa.imagen}" alt="${ropa.nombre}"/>
                     </div>
                     <div class="p-1 text-[15px]">
                         <h3 class="font-semibold">${ropa.nombre}</h3>
                         <span class="font-[400]">$${ropa.precio}</span>
                     </div>
                 </div>
-            `
+            `;
         });
 
         document.getElementById('catalogo').innerHTML = catalogoSection;
+
+
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const nombre = card.getAttribute('data-nombre');
+                const precio = card.getAttribute('data-precio');
+                const imagen = card.getAttribute('data-imagen');
+                const colores = JSON.parse(card.getAttribute('data-colores'));
+
+                mostrarModal(nombre, precio, imagen, colores);
+            });
+        });
+
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
-}
+};
+
 catalogo();
 
-const mostrarModal = (nombre, precio, imagen) => {
+const mostrarModal = (nombre, precio, imagen, colores) => {
     const modal = document.getElementById('modal');
     modal.style.display = "flex";
+
+    let coloresContainer = '';
+
+    colores.map(color => {
+        coloresContainer += `
+        <span class="bg-${color.nombre} cursor-pointer w-8 h-8 rounded-full border-4 border-menus""></span>
+        `
+    })
+    document.querySelector(".colores-container").innerHTML = coloresContainer;
 
     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.body.style.paddingRight = `${scrollBarWidth}px`;
@@ -38,22 +67,14 @@ const mostrarModal = (nombre, precio, imagen) => {
     document.getElementById('modal-nombre').textContent = nombre;
     document.getElementById('modal-precio').textContent = `$${precio}`;
     document.getElementById('modal-imagen').src = imagen;
-    const miniImagenes = document.querySelectorAll('img.mini-imagen-modal')
 
-    miniImagenes.forEach(imagenMini => {
-        imagenMini.addEventListener('click', () => {
-            document.getElementById('modal-imagen').src = imagenMini.src
-        })
-    })
     const modalImagen = document.getElementById('modal-imagen');
-
-    modalImagen.addEventListener('mousemove', () => { mouseZoom(modalImagen) })
+    modalImagen.addEventListener('mousemove', () => { mouseZoom(modalImagen); });
     modalImagen.addEventListener('mouseleave', () => {
         modalImagen.style.transform = "scale(1)";
         modalImagen.style.transition = "transform 0.3s ease-out";
     });
-
-}
+};
 
 function mouseZoom(modalImagen) {
     const mouseX = event.clientX;
@@ -72,16 +93,12 @@ function mouseZoom(modalImagen) {
     modalImagen.style.transition = "transform 0.1s ease-out";
 }
 
-
 const closeModal = () => {
     const modal = document.getElementById('modal');
     modal.style.display = "none";
-
     document.body.style.overflow = "visible";
     document.body.style.paddingRight = "0px";
-}
-
-
+};
 
 const whatsappButton = document.getElementById('whatsapp-button');
 whatsappButton.addEventListener('click', () => {
@@ -94,5 +111,4 @@ whatsappButton.addEventListener('click', () => {
     const mensajeSalto = encodeURIComponent(mensaje);
     const whatsappUrl = `https://wa.me/${numero}?text=${mensajeSalto}`;
     window.open(whatsappUrl, '_blank');
-    console.log(`Nombre: ${nombre}, Precio: ${precio} , Precio: ${imagen}`);
 });
