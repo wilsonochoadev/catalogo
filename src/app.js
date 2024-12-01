@@ -7,14 +7,14 @@ const catalogo = async () => {
         data.map(ropa => {
             catalogoSection += `
                 <div 
-                    class="max-w-[260px] min-w-[260px] cursor-pointer hover:scale-105 duration-300" 
+                    class="w-[180px] md:w-[260px] cursor-pointer hover:scale-105 duration-300" 
                     onclick="mostrarModal('${ropa.nombre}','${ropa.precio}','${ropa.imagen}')">
-                    <div class="overflow-hidden h-[256px] bg-red">
+                    <div class="overflow-hidden md:h-[256px] bg-main">
                         <img src=${ropa.imagen} alt=${ropa.nombre}/>
                     </div>
                     <div class="p-1 text-[15px]">
                         <h3 class="font-semibold">${ropa.nombre}</h3>
-                        <span class="font-[400]">${ropa.precio}</span>
+                        <span class="font-[400]">$${ropa.precio}</span>
                     </div>
                 </div>
             `
@@ -36,7 +36,7 @@ const mostrarModal = (nombre, precio, imagen) => {
     document.body.style.overflow = "hidden";
 
     document.getElementById('modal-nombre').textContent = nombre;
-    document.getElementById('modal-precio').textContent = precio;
+    document.getElementById('modal-precio').textContent = `$${precio}`;
     document.getElementById('modal-imagen').src = imagen;
     const miniImagenes = document.querySelectorAll('img.mini-imagen-modal')
 

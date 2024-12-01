@@ -578,14 +578,18 @@ video {
   top: 0px;
 }
 
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
@@ -605,52 +609,12 @@ video {
   height: 256px;
 }
 
-.h-\[30px\] {
-  height: 30px;
-}
-
-.h-\[400\] {
-  height: 400;
-}
-
-.h-\[400px\] {
-  height: 400px;
+.h-\[50px\] {
+  height: 50px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[200\] {
-  height: 200;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[450px\] {
-  height: 450px;
-}
-
-.h-\[480px\] {
-  height: 480px;
-}
-
-.h-\[40px\] {
-  height: 40px;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .w-5 {
@@ -661,10 +625,6 @@ video {
   width: 133px;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
 .w-\[400px\] {
   width: 400px;
 }
@@ -673,8 +633,36 @@ video {
   width: 100%;
 }
 
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[180px\] {
+  width: 180px;
+}
+
 .min-w-\[260px\] {
   min-width: 260px;
+}
+
+.min-w-\[160px\] {
+  min-width: 160px;
+}
+
+.min-w-\[60px\] {
+  min-width: 60px;
 }
 
 .max-w-7xl {
@@ -721,6 +709,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -765,26 +757,12 @@ video {
   background-color: rgb(209 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 60 209 / var(--tw-bg-opacity, 1));
-}
-
-.bg-green {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 209 0 / var(--tw-bg-opacity, 1));
-}
-
 .p-1 {
   padding: 0.25rem;
 }
 
 .p-10 {
   padding: 2.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .p-5 {
@@ -880,34 +858,21 @@ video {
     flex-direction: row;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
-  .sm\:bg-red {
-    --tw-bg-opacity: 1;
-    background-color: rgb(209 0 0 / var(--tw-bg-opacity, 1));
-  }
-
-  .sm\:p-12 {
-    padding: 3rem;
-  }
-
   .sm\:p-8 {
     padding: 2rem;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:h-\[400px\] {
-    height: 400px;
+  .md\:h-\[256px\] {
+    height: 256px;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:w-\[260px\] {
+    width: 260px;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 }
