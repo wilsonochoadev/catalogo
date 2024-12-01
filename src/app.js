@@ -51,15 +51,6 @@ const mostrarModal = (nombre, precio, imagen, colores) => {
     const modal = document.getElementById('modal');
     modal.style.display = "flex";
 
-    let coloresContainer = '';
-
-    colores.map(color => {
-        coloresContainer += `
-        <span class="bg-${color.nombre} cursor-pointer w-8 h-8 rounded-full border-4 border-menus""></span>
-        `
-    })
-    document.querySelector(".colores-container").innerHTML = coloresContainer;
-
     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.body.style.overflow = "hidden";
@@ -74,7 +65,21 @@ const mostrarModal = (nombre, precio, imagen, colores) => {
         modalImagen.style.transform = "scale(1)";
         modalImagen.style.transition = "transform 0.3s ease-out";
     });
+
+    let coloresContainer = '';
+
+    colores.map(color => {
+        coloresContainer += `
+        <div class="bg-${color.nombre} cursor-pointer w-8 h-8 rounded-full border-4 border-menus" onclick="selectColor('${color.imagen}')"></div>
+        `
+    })
+    document.querySelector(".colores-container").innerHTML = coloresContainer;
+
 };
+
+function selectColor(imagen) {
+    document.getElementById('modal-imagen').src = imagen;
+}
 
 function mouseZoom(modalImagen) {
     const mouseX = event.clientX;
@@ -89,7 +94,7 @@ function mouseZoom(modalImagen) {
     const percentY = (imageY / rect.height) * 100;
 
     modalImagen.style.transform = `scale(2)`;
-    modalImagen.style.transformOrigin = `${percentX}% ${percentY}%`;
+    modalImagen.style.transformOrigin = `${percentX}% ${percentY}% `;
     modalImagen.style.transition = "transform 0.1s ease-out";
 }
 
@@ -107,7 +112,7 @@ whatsappButton.addEventListener('click', () => {
     const imagen = document.getElementById('modal-imagen').src;
 
     const numero = '3144287794';
-    const mensaje = `Me encuentro interesado en comprar el producto:\nNombre: ${nombre}\nPrecio: ${precio}`;
+    const mensaje = `Me encuentro interesado en comprar el producto: \nNombre: ${nombre} \nPrecio: ${precio} `;
     const mensajeSalto = encodeURIComponent(mensaje);
     const whatsappUrl = `https://wa.me/${numero}?text=${mensajeSalto}`;
     window.open(whatsappUrl, '_blank');

@@ -5,8 +5,10 @@ module.exports = {
     colors: {
       'background': '#f7f6f6',
       'menus': '#fffefe',
-      'morado': '#3f3cbb',
-      'rojo': '#dc2121'
+      'red': '#ff7070 ',
+      'pink': '#ff70ff ',
+      'black': '#292929',
+      'yellow': '#fffd5f ',
     },
     extend: {},
   },

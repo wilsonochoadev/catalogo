@@ -1,25 +1,25 @@
 [
     {
         "id": "0",
-        "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg",
-        "nombre": "Pantalon",
+        "imagen": "https://i.pinimg.com/736x/9e/6e/69/9e6e6929d34e4dcefa4a4816c5f6d410.jpg",
+        "nombre": "Rosas",
         "precio": "120000",
         "colores": [
             {
-                "nombre": "rojo",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+                "nombre": "red",
+                "imagen": "https://i.pinimg.com/736x/9e/6e/69/9e6e6929d34e4dcefa4a4816c5f6d410.jpg"
             },
             {
-                "nombre": "purple",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+                "nombre": "pink",
+                "imagen": "https://i.pinimg.com/736x/1e/2b/da/1e2bdab058a39640733900ad3c9d7ac0.jpg"
             },
             {
-                "nombre": "morado",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+                "nombre": "black",
+                "imagen": "https://i.pinimg.com/736x/85/7c/df/857cdfef5f0c8ab89bf24f6baff8abf3.jpg"
             },
             {
-                "nombre": "morado",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
+                "nombre": "yellow",
+                "imagen": "https://i.pinimg.com/736x/63/fb/15/63fb152d564cd49168b9ed815f16ca96.jpg"
             }
         ]
     },
@@ -27,17 +27,7 @@
         "id": "1",
         "imagen": "https://i.pinimg.com/736x/43/db/65/43db6576a42c17c17ad8f5139eaf2559.jpg",
         "nombre": "Falda",
-        "precio": "130000",
-        "colores": [
-            {
-                "nombre": "morado",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
-            },
-            {
-                "nombre": "morado",
-                "imagen": "https://i.pinimg.com/736x/89/7b/0c/897b0cf213fe32b9d020cb914bdd9b26.jpg"
-            }
-        ]
+        "precio": "130000"
     },
     {
         "id": "3",
