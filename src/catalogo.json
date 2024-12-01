@@ -4,30 +4,60 @@
         "imagen": "https://i.pinimg.com/736x/9e/6e/69/9e6e6929d34e4dcefa4a4816c5f6d410.jpg",
         "nombre": "Rosas",
         "precio": "120000",
+        "material": "",
+        "estilo": "",
         "colores": [
             {
-                "nombre": "red",
-                "imagen": "https://i.pinimg.com/736x/9e/6e/69/9e6e6929d34e4dcefa4a4816c5f6d410.jpg"
+                "nombre": "Rojo",
+                "imagen": "https://i.pinimg.com/736x/9e/6e/69/9e6e6929d34e4dcefa4a4816c5f6d410.jpg",
+                "hex": "#ff2b2b"
             },
             {
-                "nombre": "pink",
-                "imagen": "https://i.pinimg.com/736x/1e/2b/da/1e2bdab058a39640733900ad3c9d7ac0.jpg"
+                "nombre": "Rosado",
+                "imagen": "https://i.pinimg.com/736x/1e/2b/da/1e2bdab058a39640733900ad3c9d7ac0.jpg",
+                "hex": "#fd7fff "
             },
             {
-                "nombre": "black",
-                "imagen": "https://i.pinimg.com/736x/85/7c/df/857cdfef5f0c8ab89bf24f6baff8abf3.jpg"
+                "nombre": "Negro",
+                "imagen": "https://i.pinimg.com/736x/85/7c/df/857cdfef5f0c8ab89bf24f6baff8abf3.jpg",
+                "hex": "#343434"
             },
             {
-                "nombre": "yellow",
-                "imagen": "https://i.pinimg.com/736x/63/fb/15/63fb152d564cd49168b9ed815f16ca96.jpg"
+                "nombre": "Amarillo",
+                "imagen": "https://i.pinimg.com/736x/63/fb/15/63fb152d564cd49168b9ed815f16ca96.jpg",
+                "hex": "#fcff9a"
             }
         ]
     },
     {
         "id": "1",
-        "imagen": "https://i.pinimg.com/736x/43/db/65/43db6576a42c17c17ad8f5139eaf2559.jpg",
-        "nombre": "Falda",
-        "precio": "130000"
+        "imagen": "https://ae01.alicdn.com/kf/Sb33f9fcb702c4950b6562dd52c19885dt.jpg",
+        "nombre": "Pantalones Cortos",
+        "precio": "120000",
+        "material": "Poliester",
+        "estilo": "Informal",
+        "colores": [
+            {
+                "nombre": "Negro",
+                "imagen": "https://ae01.alicdn.com/kf/Sb33f9fcb702c4950b6562dd52c19885dt.jpg",
+                "hex": "#201e25"
+            },
+            {
+                "nombre": "Cafe",
+                "imagen": "https://ae01.alicdn.com/kf/Se476949b117c4c2b9a1491940f999f4ba.jpg",
+                "hex": "#74634f"
+            },
+            {
+                "nombre": "Blanco",
+                "imagen": "https://ae01.alicdn.com/kf/Saae5c0618ead41bc814420cd89948e0e4.jpg",
+                "hex": "#f0f2ec"
+            },
+            {
+                "nombre": "Beige",
+                "imagen": "https://ae01.alicdn.com/kf/S6aa4fc33d3964af9b797cc339529ec78L.jpg",
+                "hex": "#ede4ce"
+            }
+        ]
     },
     {
         "id": "3",

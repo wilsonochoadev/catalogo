@@ -562,16 +562,8 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .top-0 {
@@ -588,12 +580,25 @@ video {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -607,10 +612,6 @@ video {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .h-full {
@@ -641,10 +642,6 @@ video {
   max-width: 80rem;
 }
 
-.basis-5\/6 {
-  flex-basis: 83.333333%;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -667,6 +664,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-items-end {
+  justify-items: end;
 }
 
 .gap-2 {
@@ -720,31 +721,6 @@ video {
   background-color: rgb(247 246 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-menus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 254 254 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 112 112 / var(--tw-bg-opacity, 1));
-}
-
-.bg-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 112 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(41 41 41 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 253 95 / var(--tw-bg-opacity, 1));
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -772,6 +748,10 @@ video {
   font-size: 15px;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -780,8 +760,17 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.text-\[\#808080\] {
+  --tw-text-opacity: 1;
+  color: rgb(128 128 128 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#fff\] {
@@ -828,10 +817,6 @@ video {
 @media (min-width: 640px) {
   .sm\:h-\[400px\] {
     height: 400px;
-  }
-
-  .sm\:h-\[40px\] {
-    height: 40px;
   }
 
   .sm\:w-\[300px\] {

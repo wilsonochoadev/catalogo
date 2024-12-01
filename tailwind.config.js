@@ -5,10 +5,7 @@ module.exports = {
     colors: {
       'background': '#f7f6f6',
       'menus': '#fffefe',
-      'red': '#ff7070 ',
-      'pink': '#ff70ff ',
-      'black': '#292929',
-      'yellow': '#fffd5f ',
+      'rojo': '#ff7070 ',
     },
     extend: {},
   },
