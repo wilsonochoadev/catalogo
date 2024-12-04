@@ -6,18 +6,20 @@ const catalogo = async () => {
 
         data.map(ropa => {
             const colores = ropa.colores ? JSON.stringify(ropa.colores) : '[]';
+            console.log(ropa.colores[0].imagen)
             catalogoSection += `
                 <div 
                     class="w-[150px] md:w-[260px] cursor-pointer hover:scale-105 duration-300 card"
                     data-nombre="${ropa.nombre}"
                     data-precio="${ropa.precio}"
-                    data-imagen="${ropa.imagen}"
+                    data-imagen="${ropa.colores[0].imagen}"
+                    data-imagen-alt="${ropa.colores[0].nombre}"
                     data-material="${ropa.material}"
                     data-estilo="${ropa.estilo}"
                     data-colores='${colores}'
                 >
                     <div class="overflow-hidden md:h-[256px] bg-main">
-                        <img src="${ropa.imagen}" alt="${ropa.nombre}"/>
+                        <img src="${ropa.colores[0].imagen}" alt="${ropa.nombre}"/>
                     </div>
                     <div class="p-1 text-[15px]">
                         <h3 class="font-semibold">${ropa.nombre}</h3>
@@ -36,11 +38,12 @@ const catalogo = async () => {
                 const nombre = card.getAttribute('data-nombre');
                 const precio = card.getAttribute('data-precio');
                 const imagen = card.getAttribute('data-imagen');
+                const imagenAlt = card.getAttribute('data-imagen-alt');
                 const material = card.getAttribute('data-material');
                 const estilo = card.getAttribute('data-estilo');
                 const colores = JSON.parse(card.getAttribute('data-colores'));
 
-                mostrarModal(nombre, precio, imagen, material, estilo, colores);
+                mostrarModal(nombre, precio, imagen, imagenAlt, material, estilo, colores);
             });
         });
 
@@ -51,7 +54,7 @@ const catalogo = async () => {
 
 catalogo();
 
-const mostrarModal = (nombre, precio, imagen, material, estilo, colores) => {
+const mostrarModal = (nombre, precio, imagen, imagenAlt, material, estilo, colores) => {
     const modal = document.getElementById('modal');
     modal.style.display = "flex";
 
@@ -59,13 +62,10 @@ const mostrarModal = (nombre, precio, imagen, material, estilo, colores) => {
     document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.body.style.overflow = "hidden";
 
-    if (!estilo || !material) {
-        console.log("hea")
-    }
-
     document.getElementById('modal-nombre').textContent = nombre;
     document.getElementById('modal-precio').textContent = `$${precio}`;
     document.getElementById('modal-imagen').src = imagen;
+    document.getElementById('modal-imagen').alt = imagenAlt;
     document.getElementById('modal-material').textContent = `Material: ${material}`;
     document.getElementById('modal-estilo').textContent = `Estilo: ${estilo}`;
 
